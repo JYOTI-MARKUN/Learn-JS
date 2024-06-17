@@ -1,4 +1,4 @@
-// argument keyword is adefualt keyword to evry function except for the arrow function
+// argument keyword is a defualt keyword to evry function except for the arrow function
 function add (a,b){
     return a+b;
 }
