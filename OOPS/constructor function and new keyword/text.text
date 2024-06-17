@@ -1,0 +1,24 @@
+// this keyword has different use according to different code it can define globally (in noraml case this points to awindow object)
+
+// this points to the object from where it is called
+
+
+// first method to overcome factory function problem defining fucntion outside
+
+
+as we know function is object behind the screen so we can use 
+property 
+obj.name ="jojo"
+
+all function has a method called prototype in it which contain the constructor that constructor contains that function only (check by yourself)
+
+// we we called a function noramlly it console some codes taht are written inside it and if has some return value then it return that otherwise its return value is undefined
+
+// BUT When we called a function by adding new keyword to it then its return value will be the object form of that function only 
+it return object always wether we return anything or not
+
+// THIS  WITH NEW KEYWORD
+
+this also behaves differently hwen we called a function using new keyword
+
+when we craete a function using this keyword and call it with new keyword then if we add anyfunction to its prototype then it will add to all object which are cretaed using that fucntion

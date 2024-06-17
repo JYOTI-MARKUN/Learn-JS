@@ -1,0 +1,4 @@
+ a class is function behind the seen so it have prototype method constructor function
+
+
+ methods defined inside class get store in its prototype and if we wanna code something we need to write that code inside the constructor function and any code ouside the constructor function if we write any code then it will through an error

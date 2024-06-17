@@ -1,0 +1,21 @@
+
+// promise is a special object that contain two method inside it .then and .catch method when the promise is resolve then .then method is called and when promise id rejected .catch method is called both methods take a function as an argument ,
+
+// NOTE: PROMISE CAN ONLY BE IN ONE STATE AT A TIME
+
+// promise is js native code that means it is already written and promise works asynchronously and it's code is executed by browser engine our browser keeps an eye in the state of the promise
+
+// finally keyword is used when a promise get settled 
+
+// finally always calls
+
+
+// callback queue  : same as callback queue  as we know event loops looks after both callback queue and callstack if callstack is emplty then event loop will pass a msg from callback queue to callstack
+ 
+// in case of async code js send the code to the browser to look after it and whne it's time is completed then browser engine pass the code ( callback queue here it wait for the callstack to get empty)  to the main thread of js 
+
+// microtask queue : here the callback function that is present in .then method exist
+
+// in between microtask queue and callback queue microtask has the higher priority the function that is present in microtask queue will run first,
+
+// if they both have the  same time that is there is zero in setTimeOut in that case also microtask will get the priority

@@ -1,0 +1,30 @@
+// in the intial phase import and export do not exist in js we need to useternal libraries for that after after ES it is availabel in js 
+
+to use export and import we need to use export in the file which we wanna export and use import statement in the file where we wanna import data using .js extenstion 
+
+note we need to set type="module" in the js while where we wanna import the data
+
+we can use alias name while importinga nd exporting
+
+aliasing required when we have a variable with same name in our file
+
+// the default export in cae of default export we do not required exact name as we have given in export we can use any name as we want during importing in the main fie, BUT TEH BEST PARCTICE IS TO GIVE THE SAME NAME WHILE EXPORTING AND importing data
+
+// we can use named export and defaukt export in the same file
+
+// named export can be done while declaring the variable where as  default export can not be done while variable declaration
+
+// if we wanna export function by named export it si the same way but if we wanna export it defalutly then we have to use only one export statement
+
+// import all data together as an object, in this named export comes as same name but default export comes with default name
+
+// when we use type module in our script file then it will replace script scope and all variable and import data will store here, there is one problem with the module that we can not globally access the variable nad also can not get it in the console
+
+// we do not required to use defer in script tag when we define type module 
+
+// we do not required to use script keyword in the begging of the js file to prevent the variable ddeclaratio without using const let and variable
+
+// it do not occupy our global space as it is module scope
+
+
+NOTE : WHEN WE IMPORT ANY DATA IN OUR JS FILE CODE UNDER THE IMPORTED FILE WILL RUN FIRST THEN THE CODE OF OUR OWN JS FILE WILL RUN

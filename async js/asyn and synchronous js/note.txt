@@ -1,0 +1,10 @@
+// js is a single thread language it can run only one line of code at once 
+
+// synchronous code : a code that run line by line, this execute in js brain so if it get stuck the whole code while stuck
+
+// asynchronoud : that do not run line by line, this will run in browser so that the main js code do not need to wait for the asynchronous code
+
+// we can block the js brain by using alert : if we use alert we can not do anything untill we accept the alert msg
+
+
+// note in synchronous code we can not set response type so we need to parse json to object

@@ -1,0 +1,6 @@
+we use async keyword with afunction when we use async keyword with a function that will give us a promise that is always fulfilled so if we wanna reject the promise then we use throw new error keyword
+
+await waits till the fetch give the response object this seems to be a synchronous code but that's not the case it is an asynchronous code it wait in the callstack till the request go to the url then after that whne it caoght the await keyword js send thi to the browser ad browser create a thread for it and once it get the response then it come back to the callstack and get in the nect line from where it get to the browsers code
+
+
+although we can not use await keyword outside a async function but we can do so by adding type= module in script.js file by adding type - module it will go the module scope 

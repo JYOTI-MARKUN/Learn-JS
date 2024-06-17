@@ -1,0 +1,2 @@
+what is the full form of html and what is the usecase of html?
+html stands for hyperText markup language, it is used to provide structure to a webpage ans make it accessivble to the user 

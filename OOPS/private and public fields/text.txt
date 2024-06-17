@@ -1,0 +1,9 @@
+By default the methods pof the classes are accessible to the user, in js around 4-5 years there are no method to hide the property of the classes
+so developr used to add __ double underscore or single underscore to the property just to tell it is a private property do not access it ouside, but it's not strictly restricted
+
+so to make a property private we need to age # before the property name and we need to write that name before constructor
+
+when we create a object directly and try to make some property private in it using # it will through an error but we can use ['#property'] but doint that also will not make it private as we can access it using the same syntax in the console
+
+
+NOTE USE OTHER BROWSER THAN CROME

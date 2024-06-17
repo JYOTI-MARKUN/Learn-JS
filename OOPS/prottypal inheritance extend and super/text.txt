@@ -1,0 +1,12 @@
+any object prototype chain ends in object only
+like in h1 element has a prototype HTMLHeadingElemnt which is inherited from HTMLElement with is inherited from Element which is inherited from Node which is inherited from EventTarget which is further inherited from object only 
+check this by console.dir(document.querySelector("h1"))
+
+a normal object has only one prototype i.e onject and it ends here
+ A FUNCTION AND ARRAY HAS TWO prototype CHAINING ONE IS THEY ITSELF SECOND ONE IS OBJECT
+
+ console.dir(obj = {})
+
+ when we inherit a class from another class it inherit all property,method and constructor from its parent, in case of inheritance first prototype will be the classes slef protype and the second prototype will be the prototype of the class from where it extends , all the property,methods that are inherited from parent will show in parent prototype 
+
+ // WHEN WE use constructor for drived class then it will through an error, to solve the error we need to use super keyword, as when child class has it's own constructor then by using super keyword we need to define the property we wanna inherit from parent class, BASICALLY SUPER KEYWORD CALLS THE CONDTUCTOR OF PARENT CALSS WHEN CHILD CALSS HAS ITS OWN constructor
