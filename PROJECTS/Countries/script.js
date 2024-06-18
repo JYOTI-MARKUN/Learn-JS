@@ -1,15 +1,28 @@
+const countryContainer = document.querySelector(".country-container")
+const filterByRegion = document.querySelector(".filter-by-region")
+const searchInput = document.querySelector(".search-content input")
+const changeTheme = document.querySelector(".change-theme")
+let allCountriesData;
+
+
 fetch("https://restcountries.com/v3.1/all")
 .then((res)=>{
     return res.json()
 }).then((data)=>{
-data.forEach((country)=>{
-    console.log(country)
-    console.log(Object.values(country.languages).join(", "))
-    // console.log(Object.values(country.currencies).map((currency)=>{
-    //   return currency.name
-    // }).join(", "))
+    countries(data)
+    allCountriesData =data
 
-  
+})
+
+filterByRegion.addEventListener("change",(e)=>{
+    fetch(`https://restcountries.com/v3.1/region/${e.target.value}`)
+    .then((res)=>res.json())
+    .then(countries)
+})
+
+function countries(data){
+    countryContainer.innerHTML = ""
+data.forEach((country)=>{      
     const countryContainer = document.querySelector(".country-container")
     const countryContent = document.createElement("a")
     countryContent.classList.add("country-content")
@@ -24,5 +37,15 @@ data.forEach((country)=>{
                                     </div>`
     countryContainer.append(countryContent);
 })
+}
+
+searchInput.addEventListener("input",(e)=>{
+    const filteredCountries = allCountriesData.filter((country)=>
+     country.name.common.toLowerCase().includes(e.target.value.toLowerCase())  )
+    countries(filteredCountries)
+})
+
+changeTheme.addEventListener("click",()=>{
+    document.body.classList.toggle("dark")
 })
 

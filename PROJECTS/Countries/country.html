@@ -10,33 +10,35 @@
     <link rel="stylesheet" href="country.css">
     <script src="country.js" defer></script>
 </head>
-<body>
+<body class="dark">
     <header class="header-container">
         <div class="header-content">
-             <h2 class="title">Where in the world?</h2>
-            <span><i class="fa-regular fa-moon"></i> &nbsp;&nbsp;Dark mode</span></div>
+             <h2 class="title"><a href="/">Where in the world?</a></h2>
+            <span class="change-theme"><i class="fa-regular fa-moon"></i> &nbsp;&nbsp;Dark mode</span></div>
             </header>
-            <main class="main-container">
-                <a href="#" class="back-btn"><i class="fa-solid fa-arrow-left"></i> &nbsp;Back</a>      
-                    <div class="flag-content">
-                        <img src="" alt="">
-                        <div class="flag-text">
-                            <h2>Belgium</h2>
-                            <div class="inner-text">
-                              <p><b>Native Name:&nbsp;</b><span  class="native-name"></span></p>
-                              <p><b>Population:&nbsp;</b><span class="population"></span></p>
-                              <p><b>Resion:&nbsp;</b><span class="region"></span></p>
-                              <p><b>Sub Region:&nbsp;</b><span class="sub-region"></span></p>
-                              <p><b>Capital:&nbsp;</b><span class="capital"></span></p>
-                              <p><b>Top Level Domain:&nbsp;</b><span class="top-level-domain"></span></p>
-                              <p><b>Currencies:&nbsp;</b><span class="Curriencies"></span></p>
-                              <p><b>Language:&nbsp;</b><span class="languages-used"></span></p>
-                            </div>
-                            <div class="border-countries">
-                               <p><b>Border Countries: &nbsp;&nbsp;<a href="#">France</a><a href="#">Germany</a><a href="#">Netherlands</a></b></p>
-                            </div>
+            <main>
+             <div class="main-container">
+                <a href="#" class="back-btn" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i> &nbsp;Back</a>      
+                <div class="flag-content">
+                    <img src="" alt="">
+                    <div class="flag-text">
+                        <h2>Belgium</h2>
+                        <div class="inner-text">
+                          <p><b>Native Name:&nbsp;</b><span  class="native-name"></span></p>
+                          <p><b>Population:&nbsp;</b><span class="population"></span></p>
+                          <p><b>Resion:&nbsp;</b><span class="region"></span></p>
+                          <p><b>Sub Region:&nbsp;</b><span class="sub-region"></span></p>
+                          <p><b>Capital:&nbsp;</b><span class="capital"></span></p>
+                          <p><b>Top Level Domain:&nbsp;</b><span class="top-level-domain"></span></p>
+                          <p><b>Currencies:&nbsp;</b><span class="Curriencies"></span></p>
+                          <p><b>Language:&nbsp;</b><span class="languages-used"></span></p>
+                        </div>
+                        <div class="border-countries">                              
+                            <b>Border Countries: &nbsp;&nbsp; </b>
                         </div>
                     </div>
+                </div>
+             </div>
             </main>
 </body>
 </html>

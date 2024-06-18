@@ -1,11 +1,19 @@
 main {
     margin-top: 30px;
 }
+
+.main-container{
+  max-width: 1250px;
+  margin: auto;
+}
+
 .back-btn{     
     padding: 4px 25px;
     border-radius: 6px;
     font-size: 13px;    
     box-shadow:  0 0 4px 0 rgba(0, 0, 0,0.2); 
+    cursor: pointer;
+    
 }
 
 .flag-content{
@@ -35,7 +43,10 @@ main {
 
 .border-countries{
     margin-top: 40px;
-   
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 10px;
 }
 
 .border-countries p {
@@ -47,7 +58,7 @@ main {
 .border-countries a{
     padding: 4px 15px;
     border-radius: 6px;
-    font-size: 10px;   
+    font-size: 10px;  
     margin-inline: 4px; 
     box-shadow:  0 0 4px 0 rgba(0, 0, 0,0.2); 
 }
