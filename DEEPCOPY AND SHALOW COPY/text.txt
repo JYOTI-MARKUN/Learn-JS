@@ -1,0 +1,14 @@
+Shallow Copy : copying an array and object using spread operator, object.assign concat etc method will create a new array and object respectively,
+but when we have nested object or a array nested nside a object then the shallow copy did not work as shallow copy copies an object only in one level
+i.e. the outer object and array, Changes in nested objects affect the original, shallow copy is faster then deep copy
+
+
+DeepCopy : Recursively copies all properties, any change in the copy objet or array wont change the original  object or array 
+
+method to deep copy JSON.parse(JSON.stringify()), structuredClone()
+
+
+use shallow copy when your data contains only premitive value
+use DeepCopy when your data contains jon premitive value like nested aary or object
+
+

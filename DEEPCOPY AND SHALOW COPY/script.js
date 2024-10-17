@@ -2,8 +2,8 @@
 
 
 // let userName1 = "Jyoti";
-// let userName2 =userName1;
-// userName2 = userName1 + "Markun";
+// let userName2 =userName1;  // here userName1 and userName2 pointing to the same memory location
+// userName2 = userName1 + "Markun";  // 
 
 
 // methods to copy an array and assign some new value to another array without any change in the original array
@@ -68,3 +68,34 @@ const user = {
 };
 
 const user0 ={...user}
+
+
+// DEEP COPY 
+// uisng json method
+let obj = {
+    name:"jyoti",
+    details:{
+        age:25,city:"Delhi"
+    }
+}
+
+let deepCopy = JSON.parse(JSON.stringify(obj))
+deepCopy.details.city = "Mumbai"
+console.log(deepCopy.details.city)
+console.log(obj.details.city)
+
+//deep copy using structuredClone
+
+let obj2 = {
+    name:"janki",
+    details:{
+        age:25,city:"gurgoan"
+    }
+}
+
+let deepCopy2 = structuredClone(obj2)
+
+deepCopy.details.city = "chd"
+console.log(deepCopy.details.city)
+console.log(obj2.details.city)
+
